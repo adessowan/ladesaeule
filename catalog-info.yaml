@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: ladesaeule-api
+  title: Ladesäulen API
+  description: "Diese API stellt Informationen zur BUND Ladesäulen API bereit."
+  annotations:
+    backstage.io/techdocs-ref: dir:./docs
+    # Weitere optionale Annotationen, z. B. für GitHub-Repository, Version, etc.
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-awesome3
+  definition:
+    type: openapi
+    $text: https://raw.githubusercontent.com/adessowan/ladesaeule/refs/heads/main/ladesaeulen.yaml
